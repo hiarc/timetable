@@ -8,15 +8,7 @@
 
 import UIKit
 
-class RouteDetailController: UIViewController, UITableViewDataSource, UITableViewDelegate,UICollectionViewDataSource,UICollectionViewDelegate {
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 1
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        return UICollectionViewCell()
-    }
-    
+class RouteDetailController: UIViewController, UITableViewDataSource, UITableViewDelegate{
     var route: Route?
     var timeTable: [TimeTable] = [TimeTable]()
     
